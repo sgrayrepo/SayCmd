@@ -1,0 +1,25 @@
+name: ${name}
+version: ${version}
+description: ${description}
+author: ${author}
+website: ${url}
+
+main: ${mainClass}
+
+commands:
+    say:
+        description: Command method of sending chat message to server
+        permission: saycommand.use
+        usage: /<command> [message]
+    sayreload:
+        description: Reloads the config values for the say command
+        permission: saycommand.admin
+        usage: /<command>
+
+permissions:
+    saycommand.use:
+        description: Required permission node to use say command.
+        default: op
+    saycommand.admin:
+        description: Required permission node to reload config for say command.
+        default: op
