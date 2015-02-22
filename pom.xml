@@ -3,7 +3,7 @@
     <groupId>me.sgray.saycmd</groupId>
     <artifactId>SayCmd</artifactId>
     <!-- Version is used in plugin.yml -->
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <!-- Plugin Information -->
