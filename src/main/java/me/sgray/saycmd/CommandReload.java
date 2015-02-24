@@ -11,14 +11,17 @@ public class CommandReload implements CommandExecutor {
         this.plugin = plugin;
     }
 
+    
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         String cmdName = cmd.getName().toLowerCase();
 
+        // Don't waste time on non-matching commands.
         if (!cmdName.equals("sayreload")) {
             return false;
         }
 
+        // Reload config from file with feedback
         plugin.reloadConfig();
         sender.sendMessage("Config has been reloaded for " + plugin.getDescription().getName());
 
